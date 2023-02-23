@@ -11,6 +11,7 @@ import { Data } from './InfoData';
 import { PanoramaStartAnim } from './PanoramStartAnim';
 import { Box } from './Box';
 import { BoxOp } from './BoxOp';
+import {Panorama_Anim1} from './Panorama_Anim1'
 
 function App() {
 
@@ -31,16 +32,16 @@ function App() {
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
 
-        <BoxOp position={[-1.2, 0, 0]} />
-        <BoxOp position={[1.2, 0, 0]} />
-
+        {/* <BoxOp position={[-1.2, 0, 0]} />
+        <BoxOp position={[1.2, 0, 0]} /> */}
+        <Panorama_Anim1/>
         <OrbitControls />
 
       </Canvas>
-      <Display isVisible={isDisplay ? 'visible' : 'hidden'}
+      {/* <Display isVisible={isDisplay ? 'visible' : 'hidden'}
         closeDisplay={closeDetails}
         DataToDisplay={Data[nrInfoToDisplay]}
-      />
+      /> */}
     </>
   );
 }
