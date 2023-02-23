@@ -9,6 +9,8 @@ import { Panorama3 } from './Panorama3';
 import { Display } from './Display';
 import { Data } from './InfoData';
 import { PanoramaStartAnim } from './PanoramStartAnim';
+import { Box } from './Box';
+import { BoxOp } from './BoxOp';
 
 function App() {
 
@@ -29,14 +31,9 @@ function App() {
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
 
-        {ifPanoramaStart === true &&
-          <PanoramaStartAnim 
-            actioninfo1={(event => {
-              setIsDisplay(true);
-              setNrInfoToDisplay(1)
-            })} />
-        }
-       
+        <BoxOp position={[-1.2, 0, 0]} />
+        <BoxOp position={[1.2, 0, 0]} />
+
         <OrbitControls />
 
       </Canvas>
