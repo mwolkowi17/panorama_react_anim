@@ -12,6 +12,7 @@ import { PanoramaStartAnim } from './PanoramStartAnim';
 import { Box } from './Box';
 import { BoxOp } from './BoxOp';
 import {Panorama_Anim1} from './Panorama_Anim1'
+import { StrzalkaDiferent } from './StrzalkaDiferent';
 
 function App() {
 
@@ -34,7 +35,10 @@ function App() {
 
         {/* <BoxOp position={[-1.2, 0, 0]} />
         <BoxOp position={[1.2, 0, 0]} /> */}
+        
         <Panorama_Anim1/>
+       
+      
         <OrbitControls />
 
       </Canvas>
